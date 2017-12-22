@@ -20,4 +20,5 @@ public class Rectangle extends RectangularFigure {
     public double perimeter() {
         return 2 *(a + b);
     }
+
 }

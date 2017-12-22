@@ -5,20 +5,15 @@ package example;
  */
 public class BoxColor extends Box {
 
-
 			private String color;
 
 			public BoxColor(String color) {
-		//		super(width, height, depth);
+				super(1, 1, 1);
 				System.out.println("Вызов конструктора BoxColor");
+				super.setDepth(3);
 				this.color = color;
 			}
 
-			public BoxColor(double width, double height, double depth, String color) {
-				super(width, height, depth);
-				System.out.println("Вызов конструктора BoxColor");
-				this.color = color;
-			}
 
 			public BoxColor(){
 				System.out.println("Вызов конструктора BoxColor без параметров");
